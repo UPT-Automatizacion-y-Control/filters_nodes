@@ -1,0 +1,4 @@
+MultiChannelMeanFilterDouble5:
+    name: twist_mean
+    type: MultiChannelMeanFilterDouble
+    params: {number_of_observations: 5}

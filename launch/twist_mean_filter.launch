@@ -1,0 +1,10 @@
+<launch>
+
+<rosparam command="load" file="$(find filters_nodes)/param/twist_mean.yaml"/>
+	
+<node name="pose_filter" pkg="filters_nodes" type="twist_mean_filter_node" output="screen">
+	<remap from="twist_in" to="pose_d"/>
+	<remap from="twist_out" to="pose_d_filtered"/>  
+</node>
+
+</launch>
